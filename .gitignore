@@ -1,0 +1,8 @@
+
+# ignorando pasta de configuração Curriculo_Angular
+
+./Curriculo_Angular/node_modules
+./CurriculoDB
+./Curriculo_Spring/.gitignore
+
+
