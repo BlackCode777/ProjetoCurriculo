@@ -1,10 +1,10 @@
-package com.spring_curriculo_backend.Curriculo_Spring;
+package com.curriculo_pring_backend.curriculo_backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CurriculoSpringApplicationTests {
+class CurriculoBackendApplicationTests {
 
 	@Test
 	void contextLoads() {

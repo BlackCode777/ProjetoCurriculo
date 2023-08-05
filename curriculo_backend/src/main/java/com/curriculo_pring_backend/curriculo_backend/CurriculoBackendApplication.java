@@ -1,13 +1,13 @@
-package com.spring_curriculo_backend.Curriculo_Spring;
+package com.curriculo_pring_backend.curriculo_backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CurriculoSpringApplication {
+public class CurriculoBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CurriculoSpringApplication.class, args);
+		SpringApplication.run(CurriculoBackendApplication.class, args);
 	}
 
 }

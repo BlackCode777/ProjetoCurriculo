@@ -1,4 +1,4 @@
-package com.spring_curriculo_backend.Curriculo_Spring;
+package com.curriculo_pring_backend.curriculo_backend;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(CurriculoSpringApplication.class);
+		return application.sources(CurriculoBackendApplication.class);
 	}
 
 }
