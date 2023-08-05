@@ -1,21 +1,26 @@
 package com.spring_curriculo_backend.Curriculo_Spring.repository;
 
-import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.spring_curriculo_backend.Curriculo_Spring.model.UsuarioModel;
 
-import java.util.List;
+/*Jpa configurations*/
+@Repository
+public interface UsuarioRepository extends JpaRepository<UsuarioModel, Long> {
 
-import org.springframework.data.domain.Page;
+    // Método que busca um usuário pelo username
+    UsuarioModel findByUsername(String username);
 
-public interface UsuarioRepository extends ElasticsearchRepository<UsuarioModel, Long> {
+    // Metodo que retorna uma lista de usuarios
+    List<UsuarioModel> findAll();
 
-    /* Buscando usuários pelo username */
-    Page<UsuarioModel> findAllByUsername(String username);
+    // Método que verifica se o usuário existe
+    boolean existsByUsername(String username);
 
-    List<UsuarioModel> findByUsername(String username);
-
-    /* Listando username por id */
-    List<UsuarioModel> findById(long id);
+    // Método que busca usuario por id
+    UsuarioModel findById(long id);
 
 }
